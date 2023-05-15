@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import getAllPages from '@/api/getAllPages'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const pages = getAllPages()
+
+console.log(pages)
 
 export default function Home() {
   return (
